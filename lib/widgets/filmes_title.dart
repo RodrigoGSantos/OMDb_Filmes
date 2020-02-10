@@ -13,11 +13,11 @@ class FilmesTitles extends StatelessWidget {
       color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
+        children: <Widget>[ 
           Container(
             color: Colors.white,
             child: Image.network(
-                filmes.poster,
+              filmes.poster,
             ),
           ),
         ],
@@ -25,4 +25,3 @@ class FilmesTitles extends StatelessWidget {
     );
   }
 }
-

@@ -7,7 +7,7 @@ class Api{
 
   search(String search) async {
   http.Response response = await http.get(
-      "http://www.omdbapi.com/?s=$search&apikey=23e83391");
+      "http://www.omdbapi.com/?s=$search&type=movie&apikey=23e83391");
 
   return decode(response);
 
