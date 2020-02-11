@@ -32,14 +32,14 @@ class FavoritosBloc implements BlocBase {
 
     _favController.sink.add(_favoritos);
 
-   _saveFavoritos();
+   //_saveFavoritos();
   }
 
-  void _saveFavoritos(){
+  /*void _saveFavoritos(){
     SharedPreferences.getInstance().then((prefs){
       prefs.setString("favoritos", json.encode(_favoritos));
     });
-  }
+  }*/
   @override
   void dispose() {
     _favController.close();

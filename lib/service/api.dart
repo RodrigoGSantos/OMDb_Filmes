@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:projectomdb/Info_filmes.dart';
 import 'package:projectomdb/models/Modelo_filmes.dart';
 import 'dart:async';
 

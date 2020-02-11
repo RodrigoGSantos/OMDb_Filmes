@@ -17,8 +17,3 @@ class Filmes {
   }
 
 }
-  /*GestureDetector(
-               onTap: (){
-                 Navigator.of(context).push(MaterialPageRoute(
-      builder: (context) => Favoritos(); */
-/**/
