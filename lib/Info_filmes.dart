@@ -6,6 +6,10 @@ class InfoFilmes extends StatelessWidget {
 
   final Filmes filmes;
 
+
+
+
+
   InfoFilmes(this.filmes);
 
   @override
