@@ -5,10 +5,6 @@ import 'package:projectomdb/blocs/bloc_fav.dart';
 import 'package:projectomdb/models/Modelo_filmes.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-var proximaRota = <String, WidgetBuilder>{
-  "/login": (BuildContext context)=> InfoFilmes();
-};
-
 class FilmesTitles extends StatelessWidget {
 
   final Filmes filmes;
@@ -19,12 +15,7 @@ class FilmesTitles extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = BlocProvider.of<FavoritosBloc>(context);
 
-    return GestureDetector(
-
-      onTap: onTap: (){
-      Navigator.pushNamed(context, "/login");
-    },
-      child: Container(
+    return Container(
         margin: EdgeInsets.symmetric(vertical: 10),
         color: Colors.white,
         child: Column(
@@ -75,8 +66,7 @@ class FilmesTitles extends StatelessWidget {
             )
           ],
         ),
-      ),
-    );
+      );
   }
 }
 /**/
