@@ -5,6 +5,8 @@ import 'package:projectomdb/blocs/bloc_fav.dart';
 import 'package:projectomdb/models/Modelo_filmes.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
+import '../favoritos.dart';
+
 class FilmesTitles extends StatelessWidget {
 
   final Filmes filmes;
@@ -22,11 +24,19 @@ class FilmesTitles extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
-              color: Colors.white,
-              child: Image.network(
-                filmes.poster,
-                height: 190,
+            child: GestureDetector(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => InfoFilmes(filmes)));
+              },
+              child: Container(
+                color: Colors.white,
+                child: Image.network(
+                  filmes.poster,
+                  height: 190,
+                ),
               ),
+            ),
             ),
             Row(
               children: <Widget>[
@@ -69,4 +79,9 @@ class FilmesTitles extends StatelessWidget {
       );
   }
 }
-/**/
+/*
+              color: Colors.white,
+              child: Image.network(
+                filmes.poster,
+                height: 190,
+              ),*/
