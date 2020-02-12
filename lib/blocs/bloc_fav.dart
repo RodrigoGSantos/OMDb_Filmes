@@ -40,6 +40,7 @@ class FavoritosBloc implements BlocBase {
       prefs.setString("favoritos", json.encode(_favoritos));
     });
   }*/
+
   @override
   void dispose() {
     _favController.close();

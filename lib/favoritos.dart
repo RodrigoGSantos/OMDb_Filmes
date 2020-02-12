@@ -26,7 +26,7 @@ class Favoritos extends StatelessWidget {
                 },
                 onLongPress: (){
                   bloc.toggleFavoritos(v);
-              },
+                },
                 child: Row(
                   children: <Widget>[
                     Container(
@@ -37,9 +37,9 @@ class Favoritos extends StatelessWidget {
                     ),
                     Expanded(
                         child: Text(
-                      v.title,
-                      maxLines: 2,
-                    ))
+                          v.title,
+                          maxLines: 2,
+                        ))
                   ],
                 ),
               );

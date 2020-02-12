@@ -52,22 +52,20 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: StreamBuilder(
-        stream: BlocProvider.of<FilmesBloc>(context).outFilmes,
+          stream: BlocProvider.of<FilmesBloc>(context).outFilmes,
           builder:(context, snapshot){
-          if(snapshot.hasData)
-            return ListView.builder(
+            if(snapshot.hasData)
+              return ListView.builder(
                 itemBuilder: (context, index){
                   return FilmesTitles(snapshot.data[index]);
                 },
-              itemCount: snapshot.data.length,
-            );
-          else
-            return Container();
+                itemCount: snapshot.data.length,
+              );
+            else
+              return Container();
           }
 
       ),
     );
   }
 }
-
-/**/

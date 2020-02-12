@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'models/Modelo_filmes.dart';
 
 
+
 class InfoFilmes extends StatelessWidget {
 
   final Filmes filmes;
+
   InfoFilmes(this.filmes);
 
 
@@ -24,7 +26,6 @@ class InfoFilmes extends StatelessWidget {
     height: 500,
       width: 500,
     ),
-
     ),
     );
   }
